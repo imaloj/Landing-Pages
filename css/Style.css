@@ -30,44 +30,56 @@ header {
     margin-right:60vh;
     padding: 0;
 }
-.btn-custom {
-    background-color: #e9ffdb;
-    color: #1e0202;
-    list-style-type: none; 
-    border: 1px solid #89c065;
-} 
+/* Custom CSS for navigation items */
 
-.btn-custom:hover, .btn-custom:focus {
-    background-color: #ec843f;
-    color: rgb(255, 255, 255);
-}
-.btn-custom:active {
-    background-color: #11190e;
-    border-color: #6fa856; 
-    color: white; 
-}
-.item-pro{
+/* Style for the dropdown toggle (Products) */
+.btn-custom.dropdown-toggle.nav-item-custom {
     position: relative;
-    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #000; /* Default text color */
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
-.item-pro:hover {
-    background-color: #53a11f; /* Darker green on hover */
-    color: black; /* White text on hover */
+
+/* Hover effect for dropdown toggle (Products) */
+.btn-custom.dropdown-toggle.nav-item-custom:hover,
+.btn-custom.dropdown-toggle.nav-item-custom:focus {
+    color: #000000; /* Text color on hover/focus */
+    background-color: #00aaff3d; /* Background color on hover/focus */
+    outline: none; /* Remove default focus outline */
 }
-.about a{
-    background-color: #e9ffdb;
-    text-decoration: none   ;
-    color: #0b0a0a;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-    list-style-type: none;
+
+/* Style for dropdown menu items */
+.dropdown-menu .dropdown-item.item-pro {
+    padding: 0.5rem 1rem;
+    color: #000; /* Default text color */
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
-.about a:hover {
-    background-color: #ec843f; /* Darker green on hover */
-    color: rgb(0, 0, 0);
-    border-radius: 7px;
-    transition: ease-in-out; /* White text on hover */
+
+/* Hover effect for dropdown menu items */
+.dropdown-menu .dropdown-item.item-pro:hover,
+.dropdown-menu .dropdown-item.item-pro:focus {
+    color: #fff; /* Text color on hover/focus */
+    background-color: #63c181; /* Background color on hover/focus */
+    outline: none; /* Remove default focus outline */
+}
+.nav-item-custom {
+    position: relative;
+    padding: 0.5rem 1rem;
+    color: #000; /* Default text color */
+    text-decoration: none;
+    border-radius:7px;
+    transition: color 0.3s ease, background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for About Us link */
+.nav-item-custom:hover,
+.nav-item-custom:focus {
+    color: #0c0b0b; /* Text color on hover/focus */
+   
+    background-color: #00aaff3d; /* Background color on hover/focus */
+    outline: none; /* Remove default focus outline */
 }
 .search-form {
     margin-left: auto;;
